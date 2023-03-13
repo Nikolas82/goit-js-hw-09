@@ -26,3 +26,5 @@ function handlerStop() {
 
   startBtn.disabled = false;
 }
+
+
