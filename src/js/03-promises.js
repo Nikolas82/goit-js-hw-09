@@ -21,6 +21,7 @@ const amountEl = document.querySelector('[name="amount"]');
 
 form.addEventListener('submit', e => {
   e.preventDefault();
+ 
 
   const delay = e.currentTarget.elements.delay.valueAsNumber;
   const step = e.currentTarget.elements.step.valueAsNumber;
@@ -37,4 +38,5 @@ form.addEventListener('submit', e => {
         Notiflix.Notify.failure(` Rejected promise ${position} in ${delay}ms`);
       });
   }
+  e.currentTarget.reset();
 });
