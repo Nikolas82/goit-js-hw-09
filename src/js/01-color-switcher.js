@@ -14,6 +14,7 @@ stopBtn.addEventListener('click', handlerStop);
 
 function handlerStart() {
   startBtn.disabled = true;
+  stopBtn.disabled = false;
 
   timerId = setInterval(() => {
     const color = getRandomHexColor();
@@ -25,6 +26,7 @@ function handlerStop() {
   clearInterval(timerId);
 
   startBtn.disabled = false;
+  stopBtn.disabled = true;
 }
 
 
